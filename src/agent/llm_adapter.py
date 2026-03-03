@@ -236,6 +236,7 @@ class LLMToolAdapter:
             "model": model,
             "messages": openai_messages,
             "temperature": self._get_temperature(model),
+            "skip_model_info": True,
         }
 
         extra = get_thinking_extra_body(model_short)
